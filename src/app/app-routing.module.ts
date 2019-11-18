@@ -7,6 +7,9 @@ import { FacultyListComponent } from './faculty/faculty-list/faculty-list.compon
 import { FacultyAddComponent } from './faculty/faculty-add/faculty-add.component';
 import { FacultyEditComponent } from './faculty/faculty-edit/faculty-edit.component';
 import { BuildingPageComponent } from './building/building-page/building-page.component';
+import { BuildingListComponent } from './building/building-list/building-list.component';
+import { BuildingAddComponent } from './building/building-add/building-add.component';
+import { BuildingEditComponent } from './building/building-edit/building-edit.component';
 import { LaboratoryPageComponent } from './laboratory/laboratory-page/laboratory-page.component';
 
 
@@ -17,6 +20,9 @@ const routes: Routes = [
   {path: 'faculty-add', component: FacultyAddComponent},
   {path: 'faculty-edit', component: FacultyEditComponent},
   {path: 'building', component: BuildingPageComponent},
+  {path: 'building-list', component: BuildingListComponent},
+  {path: 'building-add', component: BuildingAddComponent},
+  {path: 'building-edit', component: BuildingEditComponent},
   {path: 'laboratory', component: LaboratoryPageComponent}
 ];
 

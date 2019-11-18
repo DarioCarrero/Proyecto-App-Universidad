@@ -7,14 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
+import { ServiceService } from './service/service.service';
 import { FacultyPageComponent } from './faculty/faculty-page/faculty-page.component';
 import { FacultyListComponent} from './faculty/faculty-list/faculty-list.component';
-import { BuildingPageComponent } from './building/building-page/building-page.component';
-import { LaboratoryPageComponent } from './laboratory/laboratory-page/laboratory-page.component';
-
-import { ServiceService } from './service/service.service';
 import { FacultyAddComponent } from './faculty/faculty-add/faculty-add.component';
 import { FacultyEditComponent } from './faculty/faculty-edit/faculty-edit.component';
+import { BuildingPageComponent } from './building/building-page/building-page.component';
+import { BuildingListComponent } from './building/building-list/building-list.component';
+import { BuildingAddComponent } from './building/building-add/building-add.component';
+import { BuildingEditComponent } from './building/building-edit/building-edit.component';
+import { LaboratoryPageComponent } from './laboratory/laboratory-page/laboratory-page.component';
 
 
 @NgModule({
@@ -24,10 +26,13 @@ import { FacultyEditComponent } from './faculty/faculty-edit/faculty-edit.compon
     HomeComponent,
     FacultyPageComponent,
     FacultyListComponent,
-    BuildingPageComponent,
-    LaboratoryPageComponent,
     FacultyAddComponent,
     FacultyEditComponent,
+    BuildingPageComponent,
+    BuildingListComponent,
+    BuildingAddComponent,
+    BuildingEditComponent,
+    LaboratoryPageComponent,
   ],
   imports: [
     BrowserModule,
