@@ -17,4 +17,8 @@ export class FacultyPageComponent {
     this.router.navigate(['faculty-list']);
   }
 
+  Crear() {
+    this.router.navigate(['faculty-add']);
+  }
+
 }

@@ -13,6 +13,8 @@ import { BuildingPageComponent } from './building/building-page/building-page.co
 import { LaboratoryPageComponent } from './laboratory/laboratory-page/laboratory-page.component';
 
 import { ServiceService } from './service/service.service';
+import { FacultyAddComponent } from './faculty/faculty-add/faculty-add.component';
+import { FacultyEditComponent } from './faculty/faculty-edit/faculty-edit.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { ServiceService } from './service/service.service';
     FacultyListComponent,
     BuildingPageComponent,
     LaboratoryPageComponent,
+    FacultyAddComponent,
+    FacultyEditComponent,
   ],
   imports: [
     BrowserModule,

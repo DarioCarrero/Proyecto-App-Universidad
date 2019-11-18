@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FacultyPageComponent } from './faculty/faculty-page/faculty-page.component';
 import { FacultyListComponent } from './faculty/faculty-list/faculty-list.component';
+import { FacultyAddComponent } from './faculty/faculty-add/faculty-add.component';
+import { FacultyEditComponent } from './faculty/faculty-edit/faculty-edit.component';
 import { BuildingPageComponent } from './building/building-page/building-page.component';
 import { LaboratoryPageComponent } from './laboratory/laboratory-page/laboratory-page.component';
 
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'faculty', component: FacultyPageComponent},
   {path: 'faculty-list', component: FacultyListComponent},
+  {path: 'faculty-add', component: FacultyAddComponent},
+  {path: 'faculty-edit', component: FacultyEditComponent},
   {path: 'building', component: BuildingPageComponent},
   {path: 'laboratory', component: LaboratoryPageComponent}
 ];

@@ -3,7 +3,7 @@
         <div class="card-header">
             <h3>Facultades</h3>
         </div>
-        <div class="car-body">
+        <div class="card-body">
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -17,8 +17,8 @@
                         <td>{{facultad.id}}</td>
                         <td>{{facultad.name}}</td>
                         <td>
-                            <button class="btn btn-warning">Editar</button>
-                            <button class="btn btn-danger">Eliminar</button>
+                            <button (click)="Editar(facultad)" class="btn btn-warning">Editar</button>
+                            <button (click)="Eliminar(facultad)" class="btn btn-danger">Eliminar</button>
                         </td>
                     </tr>
                 </tbody>

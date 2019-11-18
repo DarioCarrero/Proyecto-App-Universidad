@@ -15,4 +15,20 @@ export class ServiceService {
   getFacultades(): Observable<Facultad[]> {
     return this.http.get<Facultad[]>(this.Url);
   }
+
+  createFacultades(facultad:Facultad): Observable<Facultad> {
+    return this.http.post<Facultad>(this.Url, facultad);
+  }
+
+  getFacultadPorId(id:number): Observable<Facultad> {
+    return this.http.get<Facultad>(this.Url+"/"+id);
+  }
+
+  updateFacultad(facultad: Facultad): Observable<Facultad> {
+    return this.http.put<Facultad>(this.Url+"/"+facultad.id, facultad);
+  }
+
+  deleteFacultad(facultad: Facultad): Observable<Facultad> {
+    return this.http.delete<Facultad>(this.Url+"/"+facultad.id);
+  }
 }

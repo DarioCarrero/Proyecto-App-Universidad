@@ -18,9 +18,20 @@ export class FacultyListComponent implements OnInit {
 
   ngOnInit() {
     this.service.getFacultades().subscribe(data => {
-      debugger;
       this.facultades=data;
     })
+  }
+
+  Editar(facultad: Facultad): void {
+    localStorage.setItem("id", facultad.id.toString());
+    this.router.navigate(["faculty-edit"]);
+  }
+
+  Eliminar(facultad: Facultad) {
+    this.service.deleteFacultad(facultad).subscribe(data => {
+      this.facultades=this.facultades.filter(f=>f!==facultad);
+      alert("Facultad eliminada...")
+    });
   }
 
 }
