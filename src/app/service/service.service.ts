@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Facultad } from '../dtos/Facultad';
 import { Edificio } from '../dtos/Edificio';
+import { Laboratorio } from '../dtos/Laboratorio';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,7 @@ export class ServiceService {
 
   URL_F = 'http://localhost:8080/universidad/facultades';
   URL_E = 'http://localhost:8081/universidad/edificios';
+  URL_L = 'http://localhost:8082/universidad/laboratorios';
 
 
   //Metodos para facultades
@@ -60,4 +62,27 @@ export class ServiceService {
   deleteEdificio(edificio: Edificio): Observable<Edificio> {
     return this.http.delete<Edificio>(this.URL_E+"/"+edificio.id);
   }
+
+
+  //Metodos para laboratorios
+
+  getLaboratorios(): Observable<Laboratorio[]> {
+    return this.http.get<Laboratorio[]>(this.URL_L);
+  }
+
+  createLaboratorio(laboratorio:Laboratorio): Observable<Laboratorio> {
+    return this.http.post<Laboratorio>(this.URL_L, laboratorio);
+  }
+
+  getLaboratorioPorId(id:number): Observable<Laboratorio> {
+    return this.http.get<Laboratorio>(this.URL_L+"/"+id);
+  }
+
+  updateLaboratorio(laboratorio: Laboratorio): Observable<Laboratorio> {
+    return this.http.put<Laboratorio>(this.URL_L+"/"+laboratorio.id, laboratorio);
+  }
+
+  deleteLaboratorio(laboratorio: Laboratorio): Observable<Laboratorio> {
+    return this.http.delete<Laboratorio>(this.URL_L+"/"+laboratorio.id);
+  }  
 }

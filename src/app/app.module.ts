@@ -17,6 +17,9 @@ import { BuildingListComponent } from './building/building-list/building-list.co
 import { BuildingAddComponent } from './building/building-add/building-add.component';
 import { BuildingEditComponent } from './building/building-edit/building-edit.component';
 import { LaboratoryPageComponent } from './laboratory/laboratory-page/laboratory-page.component';
+import { LaboratoryListComponent } from './laboratory/laboratory-list/laboratory-list.component';
+import { LaboratoryAddComponent } from './laboratory/laboratory-add/laboratory-add.component';
+import { LaboratoryEditComponent } from './laboratory/laboratory-edit/laboratory-edit.component';
 
 
 @NgModule({
@@ -33,6 +36,9 @@ import { LaboratoryPageComponent } from './laboratory/laboratory-page/laboratory
     BuildingAddComponent,
     BuildingEditComponent,
     LaboratoryPageComponent,
+    LaboratoryListComponent,
+    LaboratoryAddComponent,
+    LaboratoryEditComponent,
   ],
   imports: [
     BrowserModule,

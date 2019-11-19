@@ -11,6 +11,9 @@ import { BuildingListComponent } from './building/building-list/building-list.co
 import { BuildingAddComponent } from './building/building-add/building-add.component';
 import { BuildingEditComponent } from './building/building-edit/building-edit.component';
 import { LaboratoryPageComponent } from './laboratory/laboratory-page/laboratory-page.component';
+import { LaboratoryListComponent } from './laboratory/laboratory-list/laboratory-list.component';
+import { LaboratoryAddComponent } from './laboratory/laboratory-add/laboratory-add.component';
+import { LaboratoryEditComponent } from './laboratory/laboratory-edit/laboratory-edit.component';
 
 
 const routes: Routes = [
@@ -23,7 +26,10 @@ const routes: Routes = [
   {path: 'building-list', component: BuildingListComponent},
   {path: 'building-add', component: BuildingAddComponent},
   {path: 'building-edit', component: BuildingEditComponent},
-  {path: 'laboratory', component: LaboratoryPageComponent}
+  {path: 'laboratory', component: LaboratoryPageComponent},
+  {path: 'laboratory-list', component: LaboratoryListComponent},
+  {path: 'laboratory-add', component: LaboratoryAddComponent},
+  {path: 'laboratory-edit', component: LaboratoryEditComponent},
 ];
 
 @NgModule({

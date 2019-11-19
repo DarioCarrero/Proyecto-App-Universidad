@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-laboratory-page',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LaboratoryPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
+  }
+
+  Consultar() {
+    this.router.navigate(['laboratory-list']);
+  }
+
+  Crear() {
+    this.router.navigate(['laboratory-add']);
   }
 
 }
